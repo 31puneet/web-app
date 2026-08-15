@@ -2413,6 +2413,8 @@
         }
       },
       "Loading clients": "Ielādē klientus...",
+      "Loading datatables": "Ielādē datu tabulas...",
+      "Loading savings transactions": "Ielādē krājkonta darījumus...",
       "Loading loans": "Ielādē aizdevumus...",
       "Loan": "Aizdevums",
       "Loan Account": "Aizdevuma konts",

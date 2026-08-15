@@ -2416,6 +2416,8 @@
         }
       },
       "Loading clients": "Chargement des clients...",
+      "Loading datatables": "Chargement des tables de données...",
+      "Loading savings transactions": "Chargement des transactions d'épargne...",
       "Loading loans": "Chargement des prêts...",
       "Loan": "Prêt",
       "Loan Account": "Compte de prêt",
