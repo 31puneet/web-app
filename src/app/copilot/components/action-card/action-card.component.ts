@@ -6,11 +6,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Component, EventEmitter, Input, Output, inject } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { ActionCard, ActionCardType } from '../../core/models/action-card.model';
-import { translateCardLabel } from '../../core/card-label';
 
 /** Renders a single structured ActionCard (client / loan / savings / insight / confirmation). */
 @Component({
@@ -23,8 +22,6 @@ import { translateCardLabel } from '../../core/card-label';
   styleUrls: ['./action-card.component.scss']
 })
 export class ActionCardComponent {
-  private readonly translate = inject(TranslateService);
-
   @Input() card!: ActionCard;
   @Output() action = new EventEmitter<string | undefined>();
   @Output() route = new EventEmitter<string | undefined>();
@@ -46,25 +43,11 @@ export class ActionCardComponent {
     }
   }
 
-  /**
-   * Ordered label/value pairs, with the label put into the officer's language.
-   *
-   * Row labels are written by the gateway from its tool manifest, which is English. The
-   * shared vocabulary is translated here; anything a deployment added itself falls through
-   * to the gateway's own wording.
-   */
+  /** Ordered label/value pairs for the card body. */
   objectEntries(data: Record<string, string>): [
     string,
     string
   ][] {
-    return Object.entries(data ?? {}).map(
-      ([
-        label,
-        value
-      ]) => [
-        translateCardLabel(label, (key) => this.translate.instant(key)),
-        value
-      ]
-    );
+    return Object.entries(data ?? {});
   }
 }

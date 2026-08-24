@@ -5649,35 +5649,35 @@
     }
   },
   "copilot": {
-    "brand": "Mifos X Copilot",
-    "currentSession": "Current session",
-    "newChat": "New chat",
+    "brand": "Mifos Intelligence AI",
+    "currentSession": "Current Session",
+    "newChat": "New Chat",
     "close": "Close",
     "greeting": {
       "morning": "Good morning",
       "afternoon": "Good afternoon",
       "evening": "Good evening"
     },
-    "welcomeHeading": "What would you like to do?",
+    "welcomeHeading": "How can I help you support your clients today?",
     "suggestions": {
-      "clientDetails": "Show me this client's profile",
-      "repaymentSchedule": "What is the repayment schedule for this loan?",
-      "savingsBalance": "What is this client's savings balance?",
-      "overdueLoans": "Which loans are overdue this week?"
+      "clientDetails": "Show me details for client John Doe",
+      "repaymentSchedule": "What is the repayment schedule for loan #107?",
+      "savingsBalance": "Show savings account balance for client #52",
+      "overdueLoans": "How many loans are overdue this week?"
     },
     "input": {
-      "placeholder": "Ask about a client, a loan or an account",
+      "placeholder": "Ask about clients, loans, or accounts...",
       "attach": "Attach file",
       "voice": "Voice input",
       "send": "Send message",
       "stop": "Stop generating"
     },
-    "disclaimer": "Mifos X Copilot helps you find answers. Anything that moves money still needs your approval.",
+    "disclaimer": "Mifos Intelligence AI is designed to assist, not replace, human decision making.",
     "nav": {
-      "recentChats": "Recent chats",
+      "recentChats": "Recent Chats",
       "chat": "Chat",
       "preferences": "Preferences",
-      "helpCenter": "Help"
+      "helpCenter": "Help Center"
     },
     "preferencesHeading": "Preferences",
     "recent": {
@@ -5687,20 +5687,20 @@
       "delete": "Delete conversation"
     },
     "help": {
-      "capabilitiesTitle": "What Mifos X Copilot can do",
+      "capabilitiesTitle": "What can Mifos Intelligence AI do?",
       "capabilities": {
-        "lookup": "Find a client and show their profile",
-        "loans": "Show loan details and repayment schedules",
-        "savings": "Check a savings balance",
-        "portfolio": "Summarize a client's portfolio",
-        "navigate": "Take you to the right page"
+        "lookup": "Look up client information and profiles",
+        "loans": "View loan details and repayment schedules",
+        "savings": "Check savings account balances",
+        "portfolio": "Get insights on client portfolios",
+        "navigate": "Navigate to specific pages in Mifos X"
       },
-      "examplesTitle": "Things to try",
-      "importantTitle": "Worth knowing",
+      "examplesTitle": "Example prompts",
+      "importantTitle": "Important",
       "important": {
-        "assist": "Answers help you decide. They are not the decision.",
-        "verify": "Check the figures before you act on them.",
-        "noExecute": "Nothing moves money until you confirm it."
+        "assist": "AI responses are for assistance only, not final decisions",
+        "verify": "Always verify critical financial data before taking action",
+        "noExecute": "The AI does not execute transactions on its own"
       }
     },
     "cardType": {
@@ -5710,79 +5710,18 @@
       "insight": "Insight",
       "confirmation": "Confirmation"
     },
-    "confirmWarning": "This moves real money. Check the details, then confirm.",
-    "openAssistant": "Open Mifos X Copilot",
+    "confirmWarning": "This action involves real money. Please confirm.",
+    "openAssistant": "Open AI Assistant",
     "newChatTitle": "New conversation",
     "errors": {
       "invalidLength": "That message is empty or too long. Please shorten it and try again.",
       "injectionBlocked": "That message looks like an instruction-override attempt, so it was not sent. Please rephrase it.",
-      "streamFailed": "Could not reach Mifos X Copilot. Please try again."
+      "streamFailed": "Something went wrong while contacting the assistant. Please try again."
     },
     "confirm": {
       "reference": "Reference",
-      "pendingAnnouncement": "Confirm the details before this action runs."
+      "pendingAnnouncement": "Confirmation required before this action runs."
     },
-    "assistantAvatarAlt": "Mifos X Copilot",
-    "cardLabels": {
-      "activationDate": "Activation date",
-      "activeLoans": "Active loans",
-      "amount": "Amount",
-      "appliedFor": "Applied for",
-      "approvalDate": "Approval date",
-      "approvedAmount": "Approved amount",
-      "approvedBy": "Approved by",
-      "client": "Client",
-      "clientAccount": "Client account",
-      "disbursementDate": "Disbursement date",
-      "expectedDisbursement": "Expected disbursement",
-      "firstName": "First name",
-      "lastName": "Last name",
-      "loanAccount": "Loan account",
-      "mobileNumber": "Mobile number",
-      "nextInstalment": "Next installment",
-      "office": "Office",
-      "outstanding": "Outstanding",
-      "principal": "Principal",
-      "product": "Product",
-      "reference": "Reference",
-      "repaymentAmount": "Repayment amount",
-      "repayments": "Repayments",
-      "savingsAccount": "Savings account",
-      "savingsBalance": "Savings balance",
-      "search": "Search",
-      "status": "Status",
-      "submittedOn": "Submitted on",
-      "transactionDate": "Transaction date"
-    },
-    "demo": {
-      "product": "Agriculture Term Loan",
-      "office": "Head Office",
-      "statusActive": "Active",
-      "statusApproved": "Approved",
-      "writeIntro": "I can do that. Please review the details below and confirm before I run it.",
-      "approveSummary": "Approve {{product}} for {{client}}",
-      "loanIntro": "Here is the active loan for **{{client}}**:",
-      "loanTitle": "{{product}}, active",
-      "nextInstalment": "{{amount}}, due in {{days}} days",
-      "clientIntro": "I found this client:",
-      "modeNotice": "I am running in **demo mode**, with no gateway connected yet, but everything you see here (the streaming reply, the cards, the confirmation step) is the real thing.",
-      "approved": "Approved. The loan is now recorded against your user in the audit trail.",
-      "approvedTitle": "Loan approved",
-      "approvedByYou": "You, under your own permissions",
-      "cancelled": "Cancelled. Nothing was executed.",
-      "suggest": {
-        "schedule": "Show the repayment schedule",
-        "recordRepayment": "Record a repayment",
-        "overdue": "Show overdue loans",
-        "theirLoans": "Show their loans",
-        "kyc": "Show KYC documents",
-        "savings": "Check the savings balance",
-        "clientLoans": "Show loans for this client",
-        "approve": "Approve this loan",
-        "searchClient": "Search for a client",
-        "disburse": "Disburse this loan",
-        "backToClient": "Back to the client profile"
-      }
-    }
+    "assistantAvatarAlt": "Mifos AI assistant"
   }
 }
